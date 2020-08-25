@@ -1,0 +1,59 @@
+.header {
+    display: flex;
+    color: #57B91C;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+    /* background-color: rgb(3, 3, 3); */
+    overflow-x: scroll;
+
+}
+
+
+.header__Icons {
+    display: flex;
+    padding: 10px; 
+    align-items: center;
+
+}
+
+
+.header__icon {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    cursor: pointer;
+  
+    
+}
+.header__icon > p{
+    display:none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: small;
+  
+}
+.header__icon:hover> p{
+    display: inline-flex;
+}
+.header__icon--active > p {
+    display: inline-flex;
+}
+.header__icon > .icon {
+    margin-left: auto;
+    margin-right: auto;
+}
+ .header > img {
+    object-fit: contain;
+    height: 60px;
+    margin: auto 0;
+}
+
+
+/* Hide scroll bar from Chrome, Safari and Opera */
+
+.header::-webkit-scrollbar{
+    display: none;
+}
