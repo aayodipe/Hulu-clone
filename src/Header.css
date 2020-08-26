@@ -12,8 +12,9 @@
 
 .header__Icons {
     display: flex;
-    padding: 10px; 
+    padding: 10px 10px 10px 30px; 
     align-items: center;
+    
 
 }
 
@@ -56,4 +57,11 @@
 
 .header::-webkit-scrollbar{
     display: none;
+}
+
+/* Hide Scrollbar for IE, Egde and Firefox */
+.header {
+    -ms-overflow-style: none;  /*IE nd Egde*/
+    scrollbar-width: none;  /*Firefox*/
+
 }
