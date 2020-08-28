@@ -3,8 +3,7 @@
     width:500px;
     height: 400px;
     transition: transform 100ms;
-    /* background-color: red; */
-    /* margin-left: 65px; */
+    margin-left: 20px;
     margin-bottom: 20px;
   
 
@@ -22,8 +21,21 @@
 .videoCard > h3 {
     padding-top: 10px
 }  
-.videoCard > p,
-.videoCard > h3
- {
-    padding-left: 25px;
+
+.videoCard .videoCard__stats {
+    display: none;
+}
+
+.videoCard:hover > .videoCard__stats {
+    display: flex;
+}
+
+.videoCard .info-item {
+    margin-right: 10px;
+    color: rgb(245, 228, 153);
+    margin-left: -4px;
+}
+
+.videoCard__stats > .count {
+    margin-left: 4px;
 }
