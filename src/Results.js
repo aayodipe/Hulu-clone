@@ -3,6 +3,7 @@ import './Results.css'
 import VideoCard from './Videocard.js'
 import axios from './axios'
 import request from './request'
+import FlipMove from 'react-flip-move'
 
 
 export default function Results({selectedOption}){
@@ -24,7 +25,10 @@ useEffect(() => {
 }, [selectedOption])
     return(
         <div className = 'results'>
-            {movies.map(movie => <VideoCard key ={movie.id} movie = {movie}/>)}  
+            <FlipMove>
+                 {movies.map(movie => <VideoCard key ={movie.id} movie = {movie}/>)} 
+            </FlipMove>
+             
            
         </div>
     )

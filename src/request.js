@@ -1,5 +1,5 @@
 
-    const API_KEY = "API_KEY_GOES_HERE"
+    const API_KEY = "Api_Key_goes_here"
    export default {
       fetchTrending : `/trending/all/week?api_key=${API_KEY}&language=en_US`,
       fetchTopRated: `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
